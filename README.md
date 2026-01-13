@@ -1,5 +1,5 @@
 
-## course 
+## 1_AWS Strands Course 
 ### 01_basic_agent
 1. 安装依赖：pip install strands-agents
 2. 在根目录的.env文件中环境变量：
@@ -27,3 +27,16 @@
 3. 预期输出：俩个交互场景
    - 场景1：Approval Request：Agent 请求格式化硬盘的许可
    - 场景2：Task Completion：Agent 完成任务并将控制权交还给您
+
+### 06_multi_agent_pattern
+#### 6.1: Agent as Tools
+1. 安装依赖：uv sync
+2. 执行：uv run 061_main.py
+3. 测试示例：简单提问
+   - Input：What's the weather like in Tokyo?
+   - Process: Orchestrator answers directly (no delegation needed) 
+   - Output: Direct weather information
+4. 测试示例：多Agent Chain
+   - Input：I'm planning a hiking trip to Patagonia and need waterproof boots
+   - Process: Orchestrator → Trip Planning Agent (for Patagonia context)
+   - Process: Orchestrator → Product Agent (for boot recommendations with context) Output: Comprehensive response combining travel advice and product recommendations

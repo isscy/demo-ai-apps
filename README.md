@@ -40,3 +40,5 @@
    - Input：I'm planning a hiking trip to Patagonia and need waterproof boots
    - Process: Orchestrator → Trip Planning Agent (for Patagonia context)
    - Process: Orchestrator → Product Agent (for boot recommendations with context) Output: Comprehensive response combining travel advice and product recommendations
+#### 6.2: Swarm Agent
+

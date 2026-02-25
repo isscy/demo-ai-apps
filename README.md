@@ -42,3 +42,5 @@
    - Process: Orchestrator → Product Agent (for boot recommendations with context) Output: Comprehensive response combining travel advice and product recommendations
 #### 6.2: Swarm Agent
 
+## 2_demo_app
+特色AI项目

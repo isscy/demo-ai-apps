@@ -23,6 +23,19 @@
 - 点击 “🎙️ 生成播客” 按钮
 - 等待处理完成后，即可在线播放生成的播客音频，或下载 mp3 文件
 
+### 02_breakup_recovery_multi_agent
+1. 主要功能
+- Multi-Agent
+- 支持上传聊天记录截图
+- 并行执行：多个智能体以协调模式（coordination mode）同时处理输入
+2. 技术选型
+- agno：ai agent框架
+- Streamlit：纯 Python Web 框架
+- PIL：图像处理 用于显示上传的截图
+- OpenAI GPT-4 模型进行内容总结
+- Google Gemini Vision：文本提取、分析 直接分析聊天截图中的内容
+- Streamlit 的 st.session_state 安全存储 Gemini API Key（无需 .env 文件）
+
 
 
 

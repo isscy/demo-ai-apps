@@ -37,9 +37,15 @@
 - Streamlit 的 st.session_state 安全存储 Gemini API Key（无需 .env 文件）
 
 
-
-
-
+### 03_Data Analysis Agent
+1. 主要功能
+- 轻松分析自己的数据文件（CSV、Excel）
+- AI 自动转换成精确 SQL 查询
+2. 核心业务逻辑：
+- 用户上传 CSV/Excel → 预处理 + 存成临时 CSV → 用 DuckDB 加载成表 → 用 gpt-4o + Agno Agent 把自然语言问题转成 SQL → 执行查询 → 返回结果
+3. 技术选型
+- DuckDB  高效的内存数据库
+- pandas  数据处理：csv / EXCEL 类型转换 数据清洗
 
 
 

@@ -48,5 +48,13 @@
 - pandas  数据处理：csv / EXCEL 类型转换 数据清洗
 
 
-
+### 04_medical_imaging_agent
+1. 主要功能
+- 对各种医学影像进行 AI 辅助分析轻松分析自己的数据文件（CSV、Excel）
+- 影像类型识别：自动判断是 X光片、MRI、CT扫描、超声等哪一种模态
+2. 核心业务逻辑：
+- 用户上传医学影像 → 判断类型 + 判断部位 → 找出异常 + 给出可能的诊断 → 大白话解释 → 搜索文献
+3. 技术选型
+- PIL  Python Imaging Library
+- duckduckgo  上网搜资源 的工具
 

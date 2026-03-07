@@ -58,3 +58,16 @@
 - PIL  Python Imaging Library
 - duckduckgo  上网搜资源 的工具
 
+### 05_meme_generator_agent_browseruse  
+1. 主要功能
+- 通过 AI 智能体来创建表情包
+- 浏览器自动化：不是调用API 而是真正在浏览器中点击操作
+- 多模型自动切换
+2. 核心业务逻辑：
+- 打开浏览器 → 搜索模板 → 输入文字 → 生成图片 → 提取链接
+3. 技术选型
+- asyncio  异步
+- browser_use  AI 控制浏览器
+4. 安装依赖
+- pip install -r requirements.txt
+- python -m playwright install --with-deps

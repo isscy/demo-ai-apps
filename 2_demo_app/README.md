@@ -71,3 +71,17 @@
 4. 安装依赖
 - pip install -r requirements.txt
 - python -m playwright install --with-deps
+
+
+### 06_ModelsLab Music Generator
+1. 主要功能
+- 通过 AI 智能体来生成一段 MP3 格式的音乐轨道
+- 通过 ModelsLab API + OpenAI GPT-4 模型来生成音乐
+2. 所需 API 密钥
+- OpenAI API Key：在 OpenAI 官网注册并获取
+- ModelsLab API Key：去 ModelsLab 官网注册获取
+3. 核心业务逻辑：
+- 文字描述 → GPT-4 优化/扩展提示 → ModelsLab API 合成音乐 → 输出 MP3 文件 → 在网页上直接播放或下载
+4. 技术选型
+- asyncio  异步
+- browser_use  AI 控制浏览器
